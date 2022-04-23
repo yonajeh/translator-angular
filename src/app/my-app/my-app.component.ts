@@ -2,11 +2,11 @@ import {Component} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'my-app',
+  templateUrl: './my-app.component.html',
+  styleUrls: ['./my-app.component.css']
 })
-export class AppComponent {
+export class MyAppComponent {
   text: string = '';
   textTraduit: string = '';
   langFrom: string = '';
