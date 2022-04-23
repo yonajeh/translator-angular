@@ -5,6 +5,8 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { MyAppComponent } from './my-app/my-app.component';
 import { MyHeaderComponent } from './my-header/my-header.component';
+import {NgbModule, NgbNav} from '@ng-bootstrap/ng-bootstrap';
+import {NgbNavModule} from "@ng-bootstrap/ng-bootstrap/nav/nav.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { MyHeaderComponent } from './my-header/my-header.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [MyAppComponent, MyHeaderComponent]
