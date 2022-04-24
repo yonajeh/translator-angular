@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <td>
+      <select [(ngModel)]="langFrom">
+        <option value="">Choisir votre langue</option>
+        <option value="ar">Arabe</option>
+        <option value="fr">Francais</option>
+        <option value="en">Anglais</option>
+      </select>
+      <textarea [(ngModel)]="text" name="langFrom" id="langFrom" rows="7"></textarea>
+    </td>
+    <td>
+      <select [(ngModel)]="langTo">
+        <option value="">Choisir votre langue</option>
+        <option value="ar">Arabe</option>
+        <option value="fr">Francais</option>
+        <option value="en">Anglais</option>
+      </select>
+      <textarea [(ngModel)]="textTraduit" disabled name="langTo" id="langTo" rows="7"></textarea>
+
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <button class="btn btn-info" (click)="traduire()">Traduire</button>
+    </td>
+  </tr>
+</table>

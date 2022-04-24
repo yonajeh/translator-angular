@@ -7,11 +7,13 @@ import { MyAppComponent } from './my-app/my-app.component';
 import { MyHeaderComponent } from './my-header/my-header.component';
 import {NgbModule, NgbNav} from '@ng-bootstrap/ng-bootstrap';
 import {NgbNavModule} from "@ng-bootstrap/ng-bootstrap/nav/nav.module";
+import { MyContentComponent } from './my-content/my-content.component';
 
 @NgModule({
   declarations: [
     MyAppComponent,
-    MyHeaderComponent
+    MyHeaderComponent,
+    MyContentComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,6 @@ import {NgbNavModule} from "@ng-bootstrap/ng-bootstrap/nav/nav.module";
     NgbModule
   ],
   providers: [],
-  bootstrap: [MyAppComponent, MyHeaderComponent]
+  bootstrap: [MyAppComponent]
 })
 export class AppModule { }
