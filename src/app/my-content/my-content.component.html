@@ -1,29 +1,31 @@
-<table>
-  <tr>
-    <td>
-      <select [(ngModel)]="langFrom">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <select [(ngModel)]="langFrom" style="width: 100%">
         <option value="">Choisir votre langue</option>
         <option value="ar">Arabe</option>
         <option value="fr">Francais</option>
         <option value="en">Anglais</option>
       </select>
-      <textarea [(ngModel)]="text" name="langFrom" id="langFrom" rows="7"></textarea>
-    </td>
-    <td>
-      <select [(ngModel)]="langTo">
-        <option value="">Choisir votre langue</option>
-        <option value="ar">Arabe</option>
-        <option value="fr">Francais</option>
-        <option value="en">Anglais</option>
-      </select>
-      <textarea [(ngModel)]="textTraduit" disabled name="langTo" id="langTo" rows="7"></textarea>
+      <textarea style="width: 100%" [(ngModel)]="text" name="langFrom" id="langFrom" rows="7"></textarea>
 
-    </td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <select [(ngModel)]="langTo" style="width: 100%">
+        <option value="">Choisir votre langue</option>
+        <option value="ar">Arabe</option>
+        <option value="fr">Francais</option>
+        <option value="en">Anglais</option>
+      </select>
+      <textarea style="width: 100%" [(ngModel)]="textTraduit" disabled name="langTo" id="langTo" rows="7"></textarea>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-12">
       <button class="btn btn-info" (click)="traduire()">Traduire</button>
-    </td>
-  </tr>
-</table>
+    </div>
+  </div>
+
+</div>
