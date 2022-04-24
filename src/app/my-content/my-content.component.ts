@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {Langue} from "../langue";
 
 @Component({
   selector: 'my-content',
@@ -14,12 +13,6 @@ export class MyContentComponent implements OnInit {
   langFrom: string = '';
   langTo: string = '';
 
-  langues: Langue [] = [
-    {abbrv: 'ar', nom: 'Arabe'},
-    {abbrv: 'fr', nom: 'Francais'},
-    {abbrv: 'de', nom: 'Allmand'},
-    {abbrv: 'en', nom: 'Anglais'}
-  ];
 
   constructor(private http: HttpClient) {
   }
@@ -50,4 +43,11 @@ export class MyContentComponent implements OnInit {
     this.textTraduit = data.text;
   }
 
+  changeLangTo(to: string) {
+    this.langTo = to;
+  }
+
+  changeLangFrom(from: string) {
+    this.langFrom = from;
+  }
 }

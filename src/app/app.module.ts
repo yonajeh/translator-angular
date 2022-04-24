@@ -8,12 +8,14 @@ import { MyHeaderComponent } from './my-header/my-header.component';
 import {NgbModule, NgbNav} from '@ng-bootstrap/ng-bootstrap';
 import {NgbNavModule} from "@ng-bootstrap/ng-bootstrap/nav/nav.module";
 import { MyContentComponent } from './my-content/my-content.component';
+import { SelectLangComponent } from './select-lang/select-lang.component';
 
 @NgModule({
   declarations: [
     MyAppComponent,
     MyHeaderComponent,
-    MyContentComponent
+    MyContentComponent,
+    SelectLangComponent
   ],
   imports: [
     BrowserModule,

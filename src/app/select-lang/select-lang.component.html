@@ -1,0 +1,4 @@
+<select [(ngModel)]="lang" (change)="onChange()" style="width: 100%">
+  <option value="">Choisir votre langue</option>
+  <option *ngFor="let langue of langues" value="{{langue.abbrv}}">{{langue.nom}}</option>
+</select>

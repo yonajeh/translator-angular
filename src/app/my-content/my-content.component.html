@@ -1,18 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <select [(ngModel)]="langFrom" style="width: 100%">
-        <option value="">Choisir votre langue</option>
-        <option *ngFor="let langue of langues" value="{{langue.abbrv}}">{{langue.nom}}</option>
-      </select>
+      <select-lang (langueSelectionne)="changeLangFrom($event)"></select-lang>
       <textarea style="width: 100%" [(ngModel)]="text" name="langFrom" id="langFrom" rows="7"></textarea>
-
     </div>
     <div class="col-md-6 col-sm-12">
-      <select [(ngModel)]="langTo" style="width: 100%">
-        <option value="">Choisir votre langue</option>
-        <option *ngFor="let langue of langues" value="{{langue.abbrv}}">{{langue.nom}}</option>
-      </select>
+      <select-lang (langueSelectionne)="changeLangTo($event)"></select-lang>
       <textarea style="width: 100%" [(ngModel)]="textTraduit" disabled name="langTo" id="langTo" rows="7"></textarea>
     </div>
 
